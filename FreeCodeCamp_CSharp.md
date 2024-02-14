@@ -17,7 +17,7 @@ https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/
 | Store and iterate through sequences of data using Arrays and the foreach statement in C# | Y | Y |
 | Create readable code with conventions, whitespace, and comments in C# | Y | Y |
 | Guided project - Develop foreach and if-elseif-else structures to process array data in C# | Y | Y |
-| Challenge project - Develop foreach and if-elseif-else structures to process array data in C# | Started |  |
+| Challenge project - Develop foreach and if-elseif-else structures to process array data in C# | Y | Y |
 | Evaluate Boolean expressions to make decisions in C# | | |
 | Control variable scope and logic using code blocks in C# | | |
 | Branch the flow of code using the switch-case construct in C# | | |
