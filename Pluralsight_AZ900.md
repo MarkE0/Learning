@@ -5,10 +5,10 @@
 
 | Section | Duration | Done |
 | ----- | ----- | ----- |
-| [Introduction](#introduction-31m-29s) | 31m 29s | |
-| [Cloud Concepts](#cloud-concepts-30m-48s) | 30m 48s | |
-| [Azure Architecture](#azure-architecture-18m-50s) | 18m 50s | |
-| [Compute](#compute-32m-4s) | 32m 4s | |
+| [Introduction](#introduction-31m-29s) | 31m 29s | Complete |
+| [Cloud Concepts](#cloud-concepts-30m-48s) | 30m 48s | Complete |
+| [Azure Architecture](#azure-architecture-18m-50s) | 18m 50s | Complete |
+| [Compute](#compute-32m-4s) | 32m 4s | Complete |
 | [Networking](#networking-26m-14s) | 26m 14s | |
 | [Storage](#storage-41m-40s) | 41m 40s | |
 | [Database (Supplemental)](#database-supplemental-27m-32s) | 27m 32s | |
@@ -70,10 +70,10 @@
 | App Services | 2m 55s | Y |
 | Azure Container Instances | 4m 17s | Y |
 | Azure Kubernetes Service | 4m 45s | Y |
-| Azure Virtual Desktop | 1m 35s | |
-| Functions | 2m 55s | |
-| Demo: Azure App Services | 4m 10s | |
-| Summary | 2m 19s | |
+| Azure Virtual Desktop | 1m 35s | Y |
+| Functions | 2m 55s | Y |
+| Demo: Azure App Services | 4m 10s | Y |
+| Summary | 2m 19s | Y |
 
 #### Networking (26m 14s)
 | Title | Duration | Done |
