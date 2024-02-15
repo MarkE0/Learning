@@ -1,0 +1,99 @@
+# 90 Days of DevOps
+
+[90DaysOfDevOps - 2024](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2024.md)
+
+## Agenda
+
+- [ ] 01 > 2024 - Community Edition - Introduction - Michael Cade
+- [ ] 02 > The Digital Factory - Romano Roth
+- [ ] 03 > High-performing engineering teams and the Holy Grail - Jeremy Meiss
+- [ ] 04 > Manage Kubernetes Add-Ons for Multiple Clusters Using Cluster Run-Time State - Gianluca Mardente
+- [ ] 05 > Cross-functional empathy - Chris Kranz
+- [ ] 06 > Kubernetes RBAC with Ansible - Elif Samedin & Andrei Buzoianu
+- [ ] 07 > Automate like a pro: Dealing with test automation hassles - Mesut Durukal
+- [ ] 08 > Culinary Coding: Crafting Infrastructure Recipes with OpenTofu - Kaiwalya Koparkar
+- [ ] 09 > Why should developers care about container security? - Eric Smalling
+- [ ] 10 > Is Kubernetes Too Complicated? - Julia Furst
+<!--
+- [ ] 11 > Building Resilience: A Journey of Crafting and Validating Our Disaster Recovery Plan - Yedidya Schwartz
+- [ ] 12 > Know your data: The Stats behind the Alerts - Dave McAllister
+- [ ] 13 > Architecting for Versatility - Tim Banks
+- [ ] 14 > An introduction to API Security in Kubernetes - Geoff Burke
+- [ ] 15 > Using code dependency analysis to decide what to test - Patrick Kusebauch
+- [ ] 16 > Smarter, Better, Faster, Stronger - Testing at Scale - Ada Lündhé
+- [ ] 17 > From Chaos to Resilience: Decoding the Secrets of Production Readiness - Alejandro Pedraza Borrero
+- [ ] 18 > Platform Engineering Is Not About Tech - Nicolò Cambiaso Erizzo & Francesca Carta
+- [ ] 19 > Building Efficient and Secure Docker Images with Multi-Stage Builds - Pradumna V Saraf
+- [ ] 20 > Navigating the Vast DevOps Terrain: Strategies for Learning and Staying Current - Kunal Kushwaha
+- [ ] 21 > Azure ARM now got Bicep - Tushar Kumar
+- [ ] 22 > Test in Production with Kubernetes and Telepresence - Mohammad-Ali A'râbi
+- [ ] 23 > SQL Server 2022 on Linux Containers and Kubernetes from Zero to a Hero! - Yitzhak David
+- [ ] 24 > DevSecOps - Defined, Explained & Explored - Sameer Paradkar
+- [ ] 25 > Kube-Nation: Exploring the Land of Kubernetes - Siddhant Khisty & Aakansha Priya
+- [ ] 26 > Advanced Code Coverage with Jenkins and API Mocking - Oleg Nenashev
+- [ ] 27 > From Automated to Automatic - Event-Driven Infrastructure Management with Ansible - Daniel Bodky
+- [ ] 28 > Talos Linux on VMware vSphere - Michael Cade
+- [ ] 29 > Practical introduction to OpenTelemetry tracing - Nicolas Fränkel
+- [ ] 30 > How GitHub delivers GitHub using GitHub - April Edwards
+- [ ] 31 > GitOps on AKS - Richard Hooper, Wesley Haakman, Karl Cooke
+- [ ] 32 > Cracking Cholera’s Code: Victorian Insights for Today’s Technologist - Simon Copsey
+- [ ] 33 > GitOps made simple with ArgoCD and GitHub Actions - Arsh Sharma
+- [ ] 34 > How to Implement Automated Deployment Pipelines for Your DevOps Projects - Neel Shah
+- [ ] 35 > Azure for DevSecOps Operators - Kevin Evans
+- [ ] 36 > Policy-as-Code Super-Powers! Rethinking Modern IaC With Service Mesh And CNI - Kat Morgan & Marino Wijay
+- [ ] 37 > The Lean DevOps Playbook: Make it a success from Day one - Aman Sharma
+- [ ] 38 > Open Standards: Empowering Cloud-Native Innovation - Kunal Verma
+- [ ] 39 > Is TLS in Kubernetes really that hard to understand? - Shivang Shandilya
+- [ ] 40 > Infrastructure as Code - A look at Azure Bicep and Terraform - Sarah Lean
+- [ ] 41 > My journey to reimagining DevOps: Ushering in the Second Wave - Brit Myers
+- [ ] 42 > The North Star: Risk-driven security - Jonny Tyers
+- [ ] 43 > Let's go sidecarless in Ambient Mesh! - Leon Nunes
+- [ ] 44 > Exploring Firecracker - Irine Kokilashvili
+- [ ] 45 > Microsoft DevOps Solutions or how to integrate the best of Azure DevOps and GitHub - Peter De Tender
+- [ ] 46 > Mastering AWS Systems Manager: Simplifying Infrastructure Management - Adit Modi
+- [ ] 47 > Azure logic app, low / no code - Ian Engelbrecht
+- [ ] 48 > From Puddings to Platforms: Bringing Ideas to life with ChatGPT - Anthony Spiteri
+- [ ] 49 > From Confusion To Clarity: How Gherkin And Specflow Ensures Clear Requirements and Bug-Free Apps - Steffen Jørgensen
+- [ ] 50 > State of cloud native 2024 - Saiyam Pathak
+- [ ] 51 >
+- [ ] 52 > Multi-Model Databases and its place in DevOps - Pratim Bhosale
+- [ ] 53 > Implementing SRE (Site Reliability Engineering) - Andy Babiec
+- [ ] 54 >
+- [ ] 55 > Bringing Together IaC and CM with Terraform Provider for Ansible - Razvan Ionescu
+- [ ] 56 > Automated database deployment within the DevOps process - Marc Müller
+- [ ] 57 >
+- [ ] 58 > OSV Scanner: A Powerful Tool for Open Source Security - Paras Mamgain
+- [ ] 59 > Continuous Delivery pipelines for cloud infrastructure - Michael Lihs
+- [ ] 60 > Migrating a monolith to Cloud-Native and the stumbling blocks that you don’t know about - JJ Asghar
+- [ ] 61 > Demystifying Modernisation: True Potential of Cloud Technology - Anupam Phoghat
+- [ ] 62 > Chatbots are going to destroy infrastructures and your cloud bills - Stanislas Girard
+- [ ] 63 > Introduction to Database Operators for Kubernetes - Juarez Junior
+- [ ] 64 > The Invisible Guardians: Unveiling the Power of Monitoring and Observability in the Digital Age - Santosh Kumar Perumal
+- [ ] 65 > Azure pertinent DevOps for non-coders - Sucheta Gawade
+- [ ] 66 > A Developer's Journey to the DevOps: The Synergy of Two Worlds - Jonah Andersson
+- [ ] 67 > Art of DevOps: Harmonizing Code, Culture, and Continuous Delivery - Rohit Ghumare
+- [ ] 68 > Service Mesh for Kubernetes 101: The Secret Sauce to Effortless Microservices Management - Mohd Imran
+- [ ] 69 > Enhancing Kubernetes security, visibility, and networking control logic - Dean Lewis
+- [ ] 70 > Simplified Cloud Adoption with Microsoft's Terraforms Azure Landing Zone Module - Simone Bennett
+- [ ] 71 >
+- [ ] 72 > Infrastructure as Code with Pulumi - Scott Lowe
+- [ ] 73 > E2E Test Before Merge - Natalie Lunbeck
+- [ ] 74 > Workload Identity Federation with Azure DevOps and Terraform - Arindam Mitra
+- [ ] 75 > Achieving Regulatory Compliance in Multi-Cloud Deployments with Terraform - Eric Evans
+- [ ] 76 > All you need to know about AWS CDK. - Amogha Kancharla
+- [ ] 77 > DConnect to Microsoft APIs in Azure DevOps Pipelines using Workload Identity Federation - Jan Vidar Elven
+- [ ] 78 > Scaling Terraform Deployments with GitHub Actions: Essential Configurations - Thomas Thornton
+- [ ] 79 > DevEdOps - Adam Leskis
+- [ ] 80 > Unlocking K8s Troubleshooting Best Practices with Botkube - Maria Ashby
+- [ ] 81 > Leveraging Kubernetes to build a better Cloud Native Development Experience - Nitish Kumar
+- [ ] 82 > Dev Containers in VS Code - Chris Ayers
+- [ ] 83 > IaC with Pulumi and GitHub Actions - Till Spindler
+- [ ] 84 > Hacking Kubernetes For Beginners - Benoit Entzmann
+- [ ] 85 > Reuse, Don't Repeat - Creating an Infrastructure as Code Module Library - Sam Cogan
+- [ ] 86 > Tools To Make Your Terminal DevOps and Kubernetes Friendly - Maryam Tavakkoli
+- [ ] 87 > Hands-on Performance Testing with k6 - Pepe Cano
+- [ ] 88 > What Developers Want from Internal Developer Portals - Ganesh Datta
+- [ ] 89 > Seeding Infrastructures: Merging Terraform with Generative AI for Effortless DevOps Gardens - Renaldi Gondosubroto
+- [ ] 90 > Fighting fire with fire: Why we cannot always prevent technical issues with more tech - Anaïs Urlichs
+- [ ] 91 > Day 91 - March 31st 2024 - Closing - Michael Cade
+-->
