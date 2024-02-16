@@ -78,8 +78,8 @@
 #### Networking (26m 14s)
 | Title | Duration | Done |
 | ----- | ----- | ----- |
-| Introduction | 1m 13s | |
-| Virtual Network | 4m 50s | |
+| Introduction | 1m 13s | Y |
+| Virtual Network | 4m 50s | Y |
 | Load Balancer | 2m 20s | |
 | VPN Gateway | 2m 46s | |
 | Application Gateway | 2m 40s | |
