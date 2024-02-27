@@ -110,6 +110,8 @@ Semantic elements:
 ```html
 <div>     </div>                    Division. Contains any other elements. Useful for applying specific styles. Causes line break.
 
+<a href> COME BACK TO <!-- ! TODO -->
+
 <p>       </p>                      Paragraph.
      style="text-align:right"         Specify alignment via style ("align" keyword is deprecated).
 
@@ -187,4 +189,205 @@ Semantic elements:
 
   <button >Submit</button>          Button on form, e.g. Submit.
     type="submit"                     Type of button - submit / button / reset.
+```
+
+
+### Multimedia
+```html
+<img >                              Embed and image in a webpage.
+  src="images/car.png"                Source of the image, i.e. directory and name.
+  alt="A picture of a car"            Text alternative for accessibility. Shows if image not displayed.
+  title="My first car"                A title for the image. Shown when mouse hovers over the image.
+  usemap="#map"                       Specify a map to use for applying links.
+
+<map >      </map>                  Define a map.
+  name="map"                          The name of the map. Used in the reference tag "usemap" of an img.
+
+  <area >                           Defines areas inside an image which will be hyperlinked.
+    shape="rect"                      Shape - rectangle.
+    coords="40,70,380,440"            Coordinate from top-left to bottom-right - x1,y1,x2,y2.
+    href="location1.html"             Link to go to.
+    alt="Location 1"                  Alt text for area. Required when using href.
+
+    shape="circle"                    Shape - circle.
+    coords="100,100,50"               Circle location and radius - x,y,radius.
+
+    shape="poly"                      Shape - polygon.
+    coords="200,200,250,250,200,300"  Polygon coordinates - x1,y1,x2,y2,..,xn,yn.
+
+
+<picture>                           More flexible way to specify image reourses, e.g. responsive to width of window.
+  <source  >                        Source for the parent (<picture>) element.
+    srcset="images/p800.jpg"          Srcset specifies an image source.
+    media="(min-width: 800px)"        Media query defined as CSS. min-width means image will only display screen if larger than 800.
+    alt="Alternative text"            Alt text to show if image not displayed.
+    title="Title for image"           Title text for mouse hover over.
+
+  <source srcset="images/p600.jpg"  
+       media="(min-width: 600px)">    If screen larger than 600px, display this image (priority over above).
+
+  <img src="images/default.jpeg">     If neither of the above apply (less than 600px) display a default image.
+</picture>
+```
+
+
+
+### Script / No Script
+Using JavaScript directly in the body:
+```html
+<script> /* Javascript to log to console - seen in browser: right click > Inspect page */
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM is loaded');
+    })
+</script>
+```
+
+Handling when a browser doesn't support JavaScript, or has it disabled.
+```html
+<noscript>
+Browser does not support JavaScript!
+</noscript>
+```
+
+
+
+## CSS Fundamentals
+
+### Styles
+Styles can be applied:
+- **Inline**: Directly in the HTML element `<div style="color: red;">` although this can make things more difficult to maintain.
+- **Embedded**: Using the `<script>` tag inside the `<head>` section, styles can be defined.
+- **External**: Generally, it's best to define all CSS styles in a separate file that is referenced..
+
+**Priority in execution**: Inline > Embedded > External
+
+```html
+<head>
+    <link rel="stylesheet" href="styles/mystyles.css"> <!-- Referencing an EXTERNAL style Sheet -->
+
+    <style>
+        .embedded-style { /* Defining an EMBEDDED style sheet */
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="color: red;">Div using the inline Style.</div>                                       <!-- Defining & using an INLINE style -->
+    <p  class="embedded-style">Paragraph using the embedded Style.</p>                               <!-- Using the EMBEDDED style from HEAD -->
+    <h1 class="external-style">Heading with external style.</h1>                                     <!-- Using the EXTERNAL style -->
+    <h1 class="external-style" style="color: yellowgreen;">External style overridden by Inline.</h1> <!-- Inline overrules external -->
+</body>
+```
+
+`styles/mystyles.css`:
+```css
+/* External styles */
+.external-style {
+    font-size: 24px;
+    font-weight: bold;
+    color: blueviolet;
+}
+```
+
+
+### Selectors
+
+Selectors are patterns used to select the elements you want to style.
+
+```css
+/* Element Selector. Recognised HTML tags. */
+p {
+    color: blue;
+}
+
+/* Multiple elements. Comma separated list. */
+th, td {
+    color: blue;
+}
+
+/* Class Selector. Defined new class. Used with class="myClass" (no dot in front). Case sensitive. */
+.myClass {
+  font-size: 26px;
+}
+
+/* ID Selector. Unique ID for style to apply to single element only. */
+#myID {
+  background-color: yellow;
+}
+
+/* Descendant Selector. Apply to <p> elements inside the container. */
+.container p {
+  font-weight: bold;
+}
+
+/* Pseudoclass Selector. Apply to states, e.g. link new / visited. */
+a:link {
+    color: white;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: yellow;
+}
+```
+
+Sample use of above:
+```html
+<body>
+    <p>This is the Element Selector</p>
+    <p class="myClass">This is the Class Selector</p>  <!-- Specify a class to use. Note: This is case sensitive. -->
+    <p id="myID">This is the ID Selector</p>           <!-- ID is used once generally, as opposed to a class which would be used many times -->
+    <div class="container">                            <!-- A descendant selector allows for an alternative set of styles within a section of the webpage -->
+        <p>This is the Descendant Selector</p>
+    </div>
+    <a href="https://www.microsoft.com">Microsoft</a>  <!-- A link will use the a:hover (etc) Pseudoclass Selectors -->
+
+</body>
+```
+
+**Note**: The order can be important on selectors, e.g. Visited should be listed *before* Hover, otherwise Visited would take precedence when hovering over, and nothing would change.
+
+
+
+
+
+### Style Definitions (some)
+
+ADD MORE..
+
+```css
+body {
+    font-family: Arial, sans-serif; /* Try Arial, and if not available try sans-serif (without curly bits in font). Careful: Fonts may not be available */
+    line-height: 1.6;               /* What is this? */
+    
+    margin: 0;                      /* Top, left, right - may be better to use px */
+    padding: 0;                     /* Padding body of page (may need px?)*/
+
+    color: red;                     /* Can use a colour name */
+    background-color: #f0f0f0;      /* Hex colours must use "#" and be either 6 or 3 digits (e.g. #1166bb = #16b) */
+}
+
+.container {                        /* If starting with a dot, it is a Class. Body is not a class. */
+    width: 80%;                     /* Percentage of parent (whole page) */
+    margin: 20px auto;              /* Margin is outside - between it and the parent container */
+    background-color: #fff;         /* Set a different background colour to the body of the page */
+    padding: 20px;                  /* Happens inside the container/box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow around an element, e.g. a div tag */
+}
+```
+
+
+
+
+
+
+## JavaScript
+```javascript
+<script> /* Javascript to log to console - seen in browser: right click > Inspect page */
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM is loaded');
+    })
+</script>
 ```
