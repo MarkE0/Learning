@@ -1,8 +1,8 @@
 # Learning
 Courses, etc
 
-## Keywords
-- [HTML Notes](HTMLCSS/HTMLCSS/HtmlNotes.md)
+## Reference
+- [HTML Notes](HTMLCSS/HtmlNotes.md)
 
 ## Courses
 - [AZ-900 Pluralsight](Azure/Pluralsight_AZ-900.md)
