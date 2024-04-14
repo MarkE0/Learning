@@ -11,7 +11,7 @@
 
 | Module | Name | Done |
 | ------ | ---- | ---- |
-| 1.1 | Fundamental AI Concepts | |
+| 1.1 | Fundamental AI Concepts | Y |
 | 1.2 | Fundamentals of machine learning | |
 | 1.3 | Fundamentals of Azure AI services | |
 
