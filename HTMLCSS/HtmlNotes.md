@@ -62,15 +62,15 @@
 ## Body Section
 
 ### Semantic Tags
+Non-semantic elements:
+- Examples: `<div>` and `<span>`
+- Don’t provide any inherent meaning.
+
 Semantic elements:
 - **Clearly describe their meaning** to both browser and developer. 
 - Help **structure a web page** by defining different parts of its content.
 - **Improve accessibility**.
 - Makes HTML code **more meaningful** and **easier to understand** for both developers and **search engines**.
-
-Non-semantic elements:
-- Examples: `<div>` and `<span>`
-- Don’t provide any inherent meaning.
 
 ```html
 <article> </article>                Specifies independent, self-contained content. An article should make sense on its own and can 
