@@ -1,4 +1,4 @@
-# HTML & CSS
+# HTML
 
 <!-- "Entry level cert in html and css" -->
 
